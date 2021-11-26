@@ -12943,6 +12943,9 @@ fieldset:disabled .btn {
   height: 500px;
   background-image: url("../imgs/bimage.jpg");
   background-position: center;
+  background-repeat: no-repeat;
+
+	
 }
 
 .navbar-inner {
@@ -13102,4 +13105,60 @@ a.social:hover {
   right: 0.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
+}
+
+.wholeContainer{
+  justify-content: center;
+}
+
+.oramaInfoPicContainer{
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  width: 85%;
+  justify-content: center;
+  margin:auto;
+  display:flex;
+}
+
+.oramaInfoPicContainer .infoWithPic{
+  position: relative;
+  display:flex;
+
+}
+
+.oramaInfoPicContainer .infoWithPic .imgBox{
+  max-width: 50%;
+  margin: auto;
+}
+
+.oramaInfoPicContainer .infoWithPic .imgBox img{
+  max-width: 100%;
+}
+
+.oramaInfoPicContainer .infoWithPic .content{
+  max-width: 60%;
+  margin: auto;
+  padding: 20px
+}
+
+@media (max-width: 768px)
+{
+  .oramaInfoPicContainer .infoWithPic{
+    flex-direction: column;
+    max-width: 95%;
+  }
+  .oramaInfoPicContainer .infoWithPic .imgBox{
+    max-width: 100%;
+    margin: auto;
+  }
+  .oramaInfoPicContainer .infoWithPic .imgBox img{
+    min-width: 150px;
+    margin:auto;
+  }
+  .oramaInfoPicContainer .infoWithPic .content{
+    max-width: 100%;
+    margin: auto;
+    padding: 5px
+  }
 }
