@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/oramaWeb/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/oramaWeb/static/js/main.d174d2eb.chunk.js",
-    "main.js.map": "/oramaWeb/static/js/main.d174d2eb.chunk.js.map",
+    "main.js": "/oramaWeb/static/js/main.ee7ae164.chunk.js",
+    "main.js.map": "/oramaWeb/static/js/main.ee7ae164.chunk.js.map",
     "runtime-main.js": "/oramaWeb/static/js/runtime-main.6da38979.js",
     "runtime-main.js.map": "/oramaWeb/static/js/runtime-main.6da38979.js.map",
     "static/css/2.fe5b9679.chunk.css": "/oramaWeb/static/css/2.fe5b9679.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.fe5b9679.chunk.css",
     "static/js/2.8956cc3d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.d174d2eb.chunk.js"
+    "static/js/main.ee7ae164.chunk.js"
   ]
 }
