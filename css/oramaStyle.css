@@ -256,13 +256,13 @@
   .oramaInfoPicContainer .infoWithPic .content-box{
       justify-content: center;
     
-    padding: 20px
+    padding: 10px
   }
   .oramaInfoPicContainer .infoWithPic .content{
     justify-content: center;
     max-width: 90%;
     margin: auto;
-    padding: 20px
+    padding: 10px
   }
   
   @media (max-width: 768px) {
