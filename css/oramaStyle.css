@@ -8,9 +8,7 @@
     position: relative;  
   }
   
-  .navbar-inner {
-    background: transparent;
-  }
+  
   
   .mainTitle {
     justify-content: center;
@@ -26,8 +24,19 @@
   .mainTitle .picAndText{
     justify-content: center;
   }
-  
-
+.oramaNav{
+    background-color: #C7F1ED;
+}
+.oramaNav .container-fluid{
+    padding-left: 10%;
+}
+.oramaNav li{
+    font-family: Acre, Chivo, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    padding-right: 3em;
+    padding-left: 1em;
+}
   
   .oramaInfoPic {
     color: #424949;
@@ -133,12 +142,13 @@
 
   .slideCard .card
   {
-    max-width: 95%;
+    max-width: 85%;
     box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
     padding: 20px;
+    border-radius: 25px;
   }
   
-  .cardNext {
+  .cardNext {f
     position: absolute;
     top: 45%;
     left: 97%
@@ -183,21 +193,30 @@
   .react__slick__slider__parent .slick-prev:before, .slick-next:before {
     color: black;
   }
-  
-  .orama-bottom-box{
-    background: #999999;
+  .oramaFooter-box{
+    background: #f1eded;
     width: 100%;
-    justify-content: center;
+    
+    position: relative;
+    padding:50px;
+  }
+  .oramaFooter-info-box{
+      width: 85%;
+      margin: auto;
+  }
+  .orama-bottom-box{
+    
     display:flex;
-    height: 200px;
-    padding:20px;
+    padding-top: 20px;
+    margin: auto;
+    justify-content: center;
   }
   .social-box {
     background: #eee;
-    padding: 25px 50px;
-    position: absolute;
     
+    position: absolute;
     justify-content: center;
+    
   }
   
   a.social {
@@ -263,6 +282,13 @@
     max-width: 90%;
     margin: auto;
     padding: 10px
+  }
+  .oramaInfoPicContainer .infoWithPic .content h1{
+    padding-bottom:0.5em;
+  }
+
+  .oramaInfoPicContainer .infoWithPic .content h4{
+    padding-bottom:0.5em;
   }
   
   @media (max-width: 768px) {
@@ -366,11 +392,20 @@
   
 .timeline-box{
     padding: 100px;
+    background-color: white;
 }
 
-  .uk-timeline .uk-timeline-item .uk-card {
+  .uk-timeline .uk-timeline-item .uk-card{
       max-height: 300px;
+      border-radius: 25px;
+      background-color: papayawhip;
   }
+
+  .uk-timeline .uk-timeline-item-last .uk-card{
+    max-height: 300px;
+    border-radius: 25px;
+    background-color: beige;
+}
   
   .uk-timeline .uk-timeline-item {
       display: flex;
@@ -530,3 +565,44 @@
   section#timeline article:nth-child(5) div.inner h2:after {
     background: #9b59b6;
   }
+
+.textOverPic-box{
+    position: relative;
+    align-items: center;
+    
+    width: 85%;
+    justify-content: center;
+    margin:auto;
+    display:flex;
+    background-image: url("../imgs/bimage2.jpg");
+    background-position: center;
+    margin-bottom: 100px;
+    
+}
+
+.textOverPic-box .textOverPic{
+    height: 300px;
+    
+}
+
+.textOverPic .content{
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 80%;
+    font-family: Chivo, sans-serif;
+    
+    
+}
+
+.textOverPic .content h1{
+    padding-bottom: 0.5em;
+    font-style: italic;
+}
+.textOverPic .content h4{
+    color:gray;
+    font-size: 20px;
+}
