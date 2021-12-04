@@ -150,7 +150,7 @@
     border-radius: 25px;
   }
   
-  .cardNext {f
+  .cardNext {
     position: absolute;
     top: 45%;
     left: 97%
@@ -195,6 +195,34 @@
   .react__slick__slider__parent .slick-prev:before, .slick-next:before {
     color: black;
   }
+  .cardInfo-box{
+    background: #f1eded;
+    width: 100%;
+    
+    position: relative;
+    padding:50px;
+  }
+.cardInfo-content-box{
+    width: 85%;
+    margin:auto
+}
+
+.picGrid-box{
+    background: #f1eded;
+    width: 100%;
+    
+    position: relative;
+    padding:50px;
+  }
+.picGrid-box .picGrid-content-box{
+    width: 80%;
+    margin:auto
+}
+.picGrid-box .picGrid-content-box .picGrid-title{
+    padding: 50px;
+}
+
+
   .oramaFooter-box{
     background: #f1eded;
     width: 100%;
