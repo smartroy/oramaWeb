@@ -263,6 +263,12 @@
     padding: 50px;
 }
 
+.orama-timeline-box{
+    width: 100%;
+    
+    position: relative;
+    padding:50px;
+}
 
   .oramaFooter-box{
     background: #f1eded;
