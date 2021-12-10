@@ -27,6 +27,7 @@
     align-items: center;
   }
 .oramaNav{
+    width: 85%;
     background-color: #C7F1ED;
 }
 .oramaNav .container-fluid{
