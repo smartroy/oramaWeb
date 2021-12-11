@@ -287,15 +287,16 @@
     text-align: center;
 }
 .OramaNews-box .OramaNews-content-box .title{
-    padding:1em;
+    padding-bottom:50px;
 }
 .OramaNews-box .OramaNews-content-box .news-right{
-    max-lines: 12 ;
-    max-height: 350px;
+    
+    justify-content: center;
 }
 
 .OramaNews-box .OramaNews-content-box .news-left{
-    max-lines: 30;
+    
+    justify-content: center;
 }
 .orama-timeline-box{
     width: 100%;
