@@ -27,12 +27,21 @@
     align-items: center;
   }
 .oramaNav{
-    width: 85%;
+    
     background-color: #C7F1ED;
 }
 .oramaNav .container-fluid{
-    padding-left: 10%;
+    padding-left: 3%;
+    width: 85%;
+    position: relative;
 }
+
+.oramaNav .oramaNav-menu{
+    padding-left: 3%;
+    
+}
+
+
 .oramaNav li{
     font-family: Acre, Chivo, sans-serif;
     font-size: larger;
@@ -88,6 +97,7 @@
     margin: auto;
     font-family: Acre, Chivo, sans-serif;
   }
+
   
   
   
@@ -263,7 +273,30 @@
 .picGrid-box .picGrid-content-box .picGrid-title{
     padding: 50px;
 }
+.OramaNews-box{
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding:50px;
+}
+.OramaNews-box .OramaNews-content-box{
+    width: 85%;
+    justify-content: center;
+    margin: auto;
+    max-height: 800px;
+    text-align: center;
+}
+.OramaNews-box .OramaNews-content-box .title{
+    padding:1em;
+}
+.OramaNews-box .OramaNews-content-box .news-right{
+    max-lines: 12 ;
+    max-height: 350px;
+}
 
+.OramaNews-box .OramaNews-content-box .news-left{
+    max-lines: 30;
+}
 .orama-timeline-box{
     width: 100%;
     
@@ -277,23 +310,29 @@
     
     position: relative;
     padding:50px;
+    justify-content: center;
   }
   .oramaFooter-info-box{
       width: 85%;
       margin: auto;
   }
-  .orama-bottom-box{
+.oramaFooter-info-box  .oramaFooter-bank{
+    justify-content: center;
+    text-align: center;
+}
+.oramaFooter-box .orama-bottom-box{
     
     display:flex;
-    padding-top: 20px;
+    padding: 20px;
     margin: auto;
     justify-content: center;
   }
-  .social-box {
+  .orama-bottom-box .social-box {
+    margin: auto;
+    padding:20px;
     background: #eee;
-    
-    position: absolute;
     justify-content: center;
+    text-align: center;
     
   }
   
