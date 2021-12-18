@@ -200,6 +200,7 @@
     box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
     padding: 20px;
     border-radius: 25px;
+    margin:auto;
   }
   
   .cardNext {
@@ -261,6 +262,19 @@
     padding:50px;
 }
 
+.orama-timeline-box{
+    
+    padding-top:50px;
+    padding-left:50px;
+    padding-right:50px;
+    padding-bottom: 100px;
+  }
+.orama-timeline-box .orama-timeline-content-box{
+    position: relative;
+    width: 85%;
+    margin:auto
+}
+
 .picGrid-box{
     background: #f1eded;
     
@@ -307,12 +321,7 @@
     
     justify-content: center;
 }
-.orama-timeline-box{
-    width: 100%;
-    
-    position: relative;
-    padding:50px;
-}
+
 
 .oramaFooter-box{
     
