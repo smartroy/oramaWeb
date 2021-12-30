@@ -23,15 +23,18 @@
   }
 .mainTitle .mainLogo{
     position: relative;
-    height: 200px;
-    width:200px;
+    top:10%;
+    left:20%;
+    height: 150px;
+    width:150px;
     padding: 0;
-    margin:0;
+    
+    /* justify-content: center; */
 }
 #logoOut{
     position: absolute;
     padding: 0;
-    margin:0;
+    margin:auto;
     
     top:25px;
     left:25px;
@@ -42,8 +45,8 @@
     height: 50px;
     width: 50px;
     background-color: tran;
-    top:50px;
-    left:75px;
+    /* top:50px;
+    left:75px; */
 }
   .mainTitle .picAndText{
     display: flex;
