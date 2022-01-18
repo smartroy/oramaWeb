@@ -1,25 +1,53 @@
 import React from 'react';
 
 function InfoWithPic(props) {
-    const imgField = props.infoContent.pic ? <img src={props.infoContent.pic.url} alt="pic" className={props.infoContent.pic.className} style={props.infoContent.pic.style}></img>
+
+    const imgField = props.infoContent.pic ?
+        <div className="col-xs-12 col-md-6 imgBox">
+            <img src={props.infoContent.pic.url} alt="pic"></img>
+        </div>
         : null;
-    const titleField = props.infoContent.title ? <h1>{props.infoContent.title}</h1> : null;
-    const introField = props.infoContent.intro ? <h3>{props.infoContent.intro}</h3> : null;
+    const titleField = props.infoContent.title ? <h1 style={{ fontFamily: 'Chivo' }}>{props.infoContent.title}</h1> : null;
+    const introField = props.infoContent.intro ? <h4 style={{ fontFamily: 'Chivo' }}>{props.infoContent.intro}</h4> : null;
     const listPart = props.infoContent.list ? props.infoContent.list.map((item, index) =>
         <li key={index}>
-            <h4>{item}</h4>
+            <h5 style={{ fontFamily: 'Chivo' }}>{item}</h5>
         </li>)
         : null;
     const listField = <ul>{listPart}</ul>;
-    return (
-        <div className="clearfix oramaInfoPic" style={{ padding: "20px" }}>
-            {imgField}
-            <div>
-                {titleField}
-                {introField}
-                {listField}
-            </div>
 
+    const displayContent = props.infoContent.pic.position == "left" ?
+        <div className="infoWithPic">
+            <div className="row">
+                {imgField}
+                <div className="col-xs-12 col-md-6 content-box">
+                    <div className="content">
+                        {titleField}
+                        {introField}
+                        {listField}
+                    </div>
+                </div>
+            </div>
+        </div>
+        :
+        <div className="infoWithPic">
+
+            <div className="content-box">
+                <div className="content">
+                    {titleField}
+                    {introField}
+                    {listField}
+                </div>
+            </div>
+            {imgField}
+        </div>
+    return (
+        <div className="oramaInfoPic-box" style={{ backgroundColor: props.infoContent.backgroundColor }} id={props.infoContent.id}>
+            <div className="oramaInfoPicContainer" >
+
+                {displayContent}
+
+            </div>
         </div>
 
 

@@ -5,75 +5,52 @@ import InfoCardTrans from './components/InfoCardTrans'
 import OramaHeader from './components/OramaHeader'
 import OramaFooter from './components/OramaFooter'
 import ScrollToTop from './components/ScrollToTop'
+import OramaTimeline from './components/OramaTimeline'
+import OramaTimeline2 from './components/OramaTimeline2'
+import SlidingCards from './components/SlidingCards'
+import TextOverPic from './components/TextOverPic'
+import PicGrid from './components/PicGrid'
+import OramaNews from './components/OramaNews'
+import { infoContents } from './pageContent/infoContents'
+import { techInfo } from './pageContent/techInfo'
+import { ecoInfos } from './pageContent/oramaEco'
+import { timelineContents } from './pageContent/timelineContent'
+import { newsContent } from './pageContent/newsContents'
+
+
 function App() {
   const navItem = [
-    { name: 1, link: "#" },
-    { name: 2, link: "#" },
-    { name: 3, link: "#" },
-    { name: 4, link: "#" },
-    { name: 5, link: "#" }
+
+    { name: "Vision", link: "#vision" },
+    { name: "Eco-System", link: "#ecosystem" },
+    { name: "Contact", link: "#contact" }
   ]
-  const infoContents = [
-    {
-      pic: {
-        url: "/imgs/demo-31.png",
-        style: { float: "right", padding: "40px" },
-        className: "img-fluid"
 
-      },
-      title: "Introducing Orama",
-      intro: "A powerful engine that integrates the finest AI technology to effectively produce some of the most impressive, original, novel and high quality artworks",
-      list: [
-        "Cutting edge AI technology: CAN, GAN and its varieties, etc",
-        "The most comprehensive reference library built in, ever",
-        "Orama produced artworks minted as NFTs, ownerships can be freely traded, licensed on Orama’s own chain or cross chain",
-        "Inference on chain, making it the first ever AI to truly live on a blockchain",
-        "Orama is an engine that can connect to different chains"
-      ]
-    },
-    {
-      pic: {
-        url: "/demo-30.png",
-        style: { float: "left", padding: "40px" },
-        className: "img-fluid"
-
-      },
-      title: "Orama Canvas",
-
-      list: [
-        "The killer App, powered by Orama EngineThe brain behind all the master creations, now at the users disposal.",
-        "Highly effective production tool for creative professionalsGreatly improve the efficiency of traditional art/design creation process.",
-        "No professional skills requiredAmateurs friendly, anyone can use this platform to create amazing work, the engine does the heavy lifting. Billions of potential users.",
-        "Synergetic with the rest of Orama ecosystem (Orama Pictures, Orama Studios, etc.)",
-      ]
-    },
-    {
-      pic: {
-        url: "/rounded-in-photoretrica_1.png",
-        style: { float: "right", padding: "40px" },
-        className: "img-fluid"
-
-      },
-      title: "Orama Ecosystem",
-      intro: "More than a Blockchain, a whole Ecosystem",
-      list: [
-        "Orama’s ecosystem is so much more than an engine powered NFT chain, users can access Orama’s Canvas, Studios and other exciting labs by spending ORA token",
-        "A bazaar for NFT trading with a nexus for cross chain.",
-        "A game studio producing games utilizing NFT assets produced by Orama",
-        "A fashion brand producing line up designed by Orama",
-        "The possibilities are endless ",
-      ]
-    }
-  ]
+  const headerData = {
+    title: "Orama",
+    paragraph: "The Future of NTFs'"
+  }
+  const textOverPicData = {
+    title: "We Love Art, AI and Blockchain",
+    text: "We are an innovative and creative team of veterans in blockchain development that also happen to be savvy in AI and its related infrastructure, with proven big corporation track record"
+  }
   return (
-    <div className="WholeContainer">
+    <div className="wholeContainer">
       <ScrollToTop></ScrollToTop>
-      <OramaHeader navItems={navItem}></OramaHeader>
+      <NavBar navItems={navItem}></NavBar>
+      <OramaHeader navItems={navItem} data={headerData}></OramaHeader>
       <InfoWithPic infoContent={infoContents[0]}></InfoWithPic>
       <InfoWithPic infoContent={infoContents[1]}></InfoWithPic>
       <InfoWithPic infoContent={infoContents[2]}></InfoWithPic>
+      {/* <SlidingCards></SlidingCards> */}
+      <InfoCards cardsInfo={ecoInfos}></InfoCards>
+      <TextOverPic data={textOverPicData}></TextOverPic>
+      <InfoCards cardsInfo={techInfo}></InfoCards>
 
-      <InfoCardTrans></InfoCardTrans>
+      <OramaTimeline timelineInfo={timelineContents}></OramaTimeline>
+      <OramaNews news={newsContent}></OramaNews>
+      <PicGrid></PicGrid>
+
       <OramaFooter></OramaFooter>
     </div >
   );

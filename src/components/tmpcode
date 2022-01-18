@@ -1,0 +1,57 @@
+<div className="uk-timeline-item">
+
+                            <div className="uk-timeline-content">
+                                <div className="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom uk-overflow-auto">
+                                    <div className="uk-card-header">
+                                        <div className="uk-grid-small uk-flex-middle" data-uk-grid>
+                                            <h3 className="uk-card-title">July 8</h3>
+                                            {/* <span className="uk-label uk-label-success uk-margin-auto-right">Feature</span> */}
+                                        </div>
+                                    </div>
+                                    <div className="uk-card-body">
+                                        <p>Fully responsive timeline you can add to your UIkit 3 project
+                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="uk-timeline-item">
+
+                            <div className="uk-timeline-content">
+                                <div className="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom uk-overflow-auto">
+                                    <div className="uk-card-header">
+                                        <div className="uk-grid-small uk-flex-middle" data-uk-grid>
+                                            <h3 className="uk-card-title">July 7</h3>
+
+                                        </div>
+                                    </div>
+                                    <div className="uk-card-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur  adipiscing elit, sed do eiusmod tempor incididunt.
+                                        </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="uk-timeline-item-last">
+
+                            <div className="uk-timeline-content">
+                                <div className="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom uk-overflow-auto">
+                                    <div className="uk-card-header">
+                                        <div className="uk-grid-small uk-flex-middle" data-uk-grid>
+                                            <h3 className="uk-card-title">July 6</h3>
+
+                                        </div>
+                                    </div>
+                                    <div className="uk-card-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
